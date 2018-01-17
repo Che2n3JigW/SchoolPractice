@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_index"
+            android:icon="@drawable/icon_index"
+            android:title="首页"/>
+        <item
+            android:id="@+id/nav_History"
+            android:icon="@drawable/icon_history"
+            android:title="历史记录"/>
+        <item
+            android:id="@+id/nav_cache"
+            android:icon="@drawable/icon_cache"
+            android:title="离线缓存"/>
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/icon_collection"
+            android:title="我的收藏"/>
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Live"
+                android:icon="@drawable/icon_live"
+                android:title="直播中心"/>
+            <item
+                android:id="@+id/nav_service"
+                android:icon="@drawable/icon_service"
+                android:title="联系客服"/>
+        </menu>
+    </item>
+
+</menu>

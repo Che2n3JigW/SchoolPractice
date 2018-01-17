@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+//应用butterKnife
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "net.hycollege.cjw.copybilibli"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //butterKnife框架
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //BGABanner-Android框架
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    //glide框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //ok http框架
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+
+    //gson框架
+    compile 'com.google.code.gson:gson:2.2.4'
+}

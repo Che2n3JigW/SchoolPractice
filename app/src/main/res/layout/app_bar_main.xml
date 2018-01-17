@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RadioGroup
+        android:id="@+id/ll_rbtn_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_index"
+            android:text="首页"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_partition"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_partition"
+            android:text="分区"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/tab_message"
+            android:text="消息"
+            android:textColor="@color/radio_colors" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_rbtn_contain"
+        android:layout_alignParentTop="true" >
+    </FrameLayout>
+
+</RelativeLayout>
